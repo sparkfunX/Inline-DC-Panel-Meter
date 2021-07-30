@@ -43,7 +43,7 @@
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="6" fill="1" visible="no" active="yes"/>
@@ -2964,20 +2964,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 </packages>
 </library>
-<library name="LFP-Battery-Bridge">
+<library name="Panel Mount Meter">
 <packages>
 <package name="METER">
 <wire x1="-24" y1="14.5" x2="-23" y2="14.5" width="0.1016" layer="51"/>
 <wire x1="23" y1="14.5" x2="24" y2="14.5" width="0.1016" layer="51"/>
 <wire x1="24" y1="14.5" x2="24" y2="-14.5" width="0.1016" layer="51"/>
 <wire x1="24" y1="-14.5" x2="23" y2="-14.5" width="0.1016" layer="51"/>
-<wire x1="22.8" y1="-13.5" x2="-22.8" y2="-13.5" width="0.1016" layer="20"/>
+<wire x1="22.4" y1="-13.25" x2="-22.4" y2="-13.25" width="0.1016" layer="20"/>
 <wire x1="-23" y1="-14.5" x2="-24" y2="-14.5" width="0.1016" layer="51"/>
 <wire x1="-24" y1="-14.5" x2="-24" y2="14.5" width="0.1016" layer="51"/>
 <text x="23.5" y="-11.8" size="0.5" layer="51" rot="R90" align="center">Meter Frame</text>
-<wire x1="-22.8" y1="13.5" x2="22.8" y2="13.5" width="0.1016" layer="20"/>
-<wire x1="22.8" y1="13.5" x2="22.8" y2="-13.5" width="0.1016" layer="20"/>
-<wire x1="-22.8" y1="-13.5" x2="-22.8" y2="13.5" width="0.1016" layer="20"/>
+<wire x1="-22.4" y1="13.25" x2="22.4" y2="13.25" width="0.1016" layer="20"/>
+<wire x1="22.4" y1="13.25" x2="22.4" y2="-13.25" width="0.1016" layer="20"/>
+<wire x1="-22.4" y1="-13.25" x2="-22.4" y2="13.25" width="0.1016" layer="20"/>
 <text x="22.5" y="-6.8" size="0.5" layer="51" rot="R90" align="center">Meter Back</text>
 <wire x1="-27.94" y1="9.5758" x2="-27.94" y2="13.2842" width="0.2032" layer="51" curve="-180"/>
 <wire x1="-27.94" y1="9.5758" x2="-27.94" y2="13.2842" width="0.2032" layer="51" curve="180"/>
@@ -3213,7 +3213,6 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <attribute name="VALUE" x="2.54" y="36.068" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
 <element name="U$21" library="SparkX" package="SPARKX-LARGE" value="SPARKX-LOGO5" x="59.69" y="2.54" smashed="yes" rot="MR0"/>
-<element name="U$6" library="LFP-Battery-Bridge" package="METER" value="" x="36.83" y="20.32" smashed="yes"/>
 <element name="U$8" library="SparkFun-Hardware" package="STAND-OFF" value="" x="8.89" y="31.75" smashed="yes">
 <attribute name="NAME" x="8.89" y="33.782" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
 <attribute name="VALUE" x="8.89" y="29.718" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
@@ -3275,6 +3274,7 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <attribute name="DESIGNER" value="" x="0" y="-21.59" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 <attribute name="REV" value="" x="0" y="-21.59" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
+<element name="U$17" library="Panel Mount Meter" package="METER" value="" x="36.83" y="20.32" smashed="yes"/>
 </elements>
 <signals>
 <signal name="GND" class="1">
